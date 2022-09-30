@@ -20,7 +20,7 @@ h1 {
 
 .main {
     margin-top: 46px;
-    margin-left: 140px;
+    margin-left: 250px;
     height: 900px;
 }
 
@@ -61,6 +61,7 @@ h1 {
     position: fixed;
     left: 0;
     height: 100%;
+    width: 225px;
 
     font-family: proxima-nova, sans-serif;
 }

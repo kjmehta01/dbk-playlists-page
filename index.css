@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background-color: #630000;
     scroll-behavior: smooth;
     margin: 0;
 }
@@ -19,15 +19,19 @@ h1 {
 }
 
 .main {
-    margin-top: 46px;
-    margin-left: 250px;
+    background-color: #121212;
     height: 900px;
+
+    margin-top: 100px;
+    margin-left: 235px;
+
+    padding:0;
 }
 
 
 .top-bar {
     overflow: hidden;
-    background-color: #000000;
+    
     position: fixed;
     top: 0;
     width: 100%;
@@ -42,11 +46,11 @@ h1 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition-duration: 0.3s;
 }
 
 .top-bar a:hover {
-    background: #ddd;
-    color: black;
+    background: #c0392b;
 }
 
 .centered {
@@ -57,9 +61,13 @@ h1 {
 
 .side-bar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #121212;
+    
     position: fixed;
-    left: 0;
+
+    top: 52px;
+    left: 0px;
+
     height: 100%;
     width: 225px;
 
@@ -98,7 +106,8 @@ h1 {
 }
 
 .gallery-item:hover {
-    background-color: #333333;
+    /* background-color: #333333; */
+    background-color: #c0392b;
 }
 
 .gallery-image {
@@ -126,6 +135,6 @@ h1 {
 .video {
     /*width: calc(100vw - 60px);
     height: calc((100vw - 60px) * (9.0/16));*/
-    width: 560px;
-    height: 313px;
+    width: 700px;
+    height: 500px;
 }

@@ -30,9 +30,21 @@ h1 {
     overflow-y: scroll;
     scroll-behavior: smooth;
 
-    height: calc(100vh - 70px - 7px);
 
     padding: 10px;
+}
+
+.main2 {
+    border-radius: 15px;
+
+    margin-top: 10px;
+    margin-left: 280px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    
+    height: calc((100vh - 70px - 7px) / 2 - 65px);
+
+    padding: 0px;
 }
 
 

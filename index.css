@@ -1,5 +1,7 @@
 body {
     background-color: #121212;
+    scroll-behavior: smooth;
+    margin: 0;
 }
 
 section {
@@ -11,10 +13,71 @@ h1 {
     margin-top: 0;
     margin-bottom: 10px;
 
-    font-size:24pt;
+    font-size: 24pt;
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
 }
+
+.main {
+    margin-top: 46px;
+    margin-left: 140px;
+    height: 900px;
+}
+
+
+.top-bar {
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    font-family: proxima-nova, sans-serif;
+}
+
+.top-bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.centered {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.side-bar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    height: 100%;
+
+    font-family: proxima-nova, sans-serif;
+}
+
+.side-bar a {
+    float: top;
+    display: block;
+    color: #a7a7a7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.side-bar a:hover {
+    color: #eeeeee;
+}
+
 
 .sideways-gallery {
     display: flex;
@@ -30,6 +93,7 @@ h1 {
     gap: 0px;
     padding: 20px;
     transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 .gallery-item:hover {
@@ -54,7 +118,7 @@ h1 {
     color: #a7a7a7;
     margin: 0;
 
-    font-size:12pt;
+    font-size: 12pt;
     font-family: proxima-nova, sans-serif;
 }
 

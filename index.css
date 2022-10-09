@@ -1,11 +1,11 @@
 body {
-    background-color: #630000;
-    scroll-behavior: smooth;
+    background-color: #000;
     margin: 0;
+    overflow: hidden;
 }
 
 section {
-    padding: 15px;
+    padding: 20px;
 }
 
 h1 {
@@ -19,22 +19,31 @@ h1 {
 }
 
 .main {
-    background-color: #121212;
-    height: 900px;
+    background-image: linear-gradient(#631e17, #121212 30%);
 
-    margin-top: 100px;
-    margin-left: 235px;
+    border-radius: 15px;
 
-    padding:0;
+    margin-top: 52px;
+    margin-left: 280px;
+    margin-right: 7px;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    height: calc(100vh - 52px - 7px);
+
+    padding: 0;
 }
 
 
 .top-bar {
     overflow: hidden;
-    
+    background-color: #000;
+
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
+    height: 52px;
 
     font-family: proxima-nova, sans-serif;
 }
@@ -60,26 +69,33 @@ h1 {
 
 
 .side-bar {
-    overflow: hidden;
-    background-color: #121212;
-    
+    overflow-y: auto;
+    background-image: linear-gradient(#631e17, #121212 30%);
+
+    border-radius: 15px;
+
     position: fixed;
 
     top: 52px;
-    left: 0px;
+    left: 7px;
 
-    height: 100%;
-    width: 225px;
+    height: calc(100vh - 52px - 20px - 7px);
+    width: 265px;
+
+    padding-top: 20px;
 
     font-family: proxima-nova, sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
 }
 
 .side-bar a {
     float: top;
     display: block;
     color: #a7a7a7;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 30px;
     text-decoration: none;
 }
 
@@ -95,7 +111,7 @@ h1 {
 }
 
 .gallery-item {
-    background-color: #181818;
+    background-color: #18181870;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -137,4 +153,20 @@ h1 {
     height: calc((100vw - 60px) * (9.0/16));*/
     width: 700px;
     height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

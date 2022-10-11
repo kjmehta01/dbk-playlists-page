@@ -5,7 +5,7 @@ body {
 }
 
 section {
-    padding: 20px;
+    padding: 30px;
 }
 
 h1 {
@@ -19,47 +19,43 @@ h1 {
 }
 
 .main {
-    background-image: linear-gradient(#631e17, #121212 30%);
+    background-image: linear-gradient(#5d231e, #5d231e 30%, #121212);
 
     border-radius: 15px;
 
-    margin-top: 70px;
+    margin-top: 52px;
     margin-left: 280px;
     margin-right: 7px;
 
-    overflow-y: auto;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 
-    height: calc(100vh - 70px - 7px);
+    height: calc(100vh - 52px - 7px);
 
     padding: 0;
 }
 
 
 .top-bar {
+    overflow: hidden;
     background-color: #000;
 
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 70px;
+    height: 52px;
 
     font-family: proxima-nova, sans-serif;
-    font-size: 14pt;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .top-bar a {
-    overflow: hidden;
-    color: #fff;
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-    padding: 21px 16px;
+    padding: 14px 16px;
+    text-decoration: none;
     transition-duration: 0.3s;
-    cursor: pointer;
 }
 
 .top-bar a:hover {
@@ -67,7 +63,8 @@ h1 {
 }
 
 .centered {
-    
+    width: 50%;
+    margin: 0 auto;
 }
 
 
@@ -79,10 +76,10 @@ h1 {
 
     position: fixed;
 
-    top: 70px;
+    top: 52px;
     left: 7px;
 
-    height: calc(100vh - 70px - 20px - 7px);
+    height: calc(100vh - 52px - 20px - 7px);
     width: 265px;
 
     padding-top: 20px;
@@ -106,60 +103,92 @@ h1 {
     color: #eeeeee;
 }
 
-
-.sideways-gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+.top {
+    background-image: linear-gradient(#c0392b, #5d231e);
 }
 
-.gallery-item {
-    background-color: #18181870;
+.playlist-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.playlist-image {
+    box-shadow: 0px 0px 10px black;
+    width: 250px;
+    height: 250px;
+}
+
+.playlist-text-area{
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 0px;
-    padding: 20px;
-    transition-duration: 0.3s;
-    cursor: pointer;
+    margin-left: 30px
+}
+.playlist-text-area p{
+    font-family: proxima-nova, sans-serif;
+    margin-bottom: 0;
 }
 
-.gallery-item:hover {
-    /* background-color: #333333; */
-    background-color: #c0392b;
-}
-
-.gallery-image {
-    box-shadow: 0px 0px 10px black;
-    width: 150px;
-    height: 150px;
-}
-
-.gallery-text {
+.tag {
+    font-size: 10pt;
     color: #ffffff;
     margin-top: 10px;
-    margin-bottom: 0;
+}
 
-    font-size: 14pt;
-    font-family: proxima-nova, sans-serif;
+.name{
     font-weight: bold;
+    font-size: 48pt;
+    color: #ffffff;
+    margin-top: 0px;
 }
 
-.gallery-subtext {
-    color: #a7a7a7;
-    margin: 0;
-
+.description{
     font-size: 12pt;
-    font-family: proxima-nova, sans-serif;
+    color: #d1d1d1;
+    margin-top: 5px;
 }
 
-.video {
-    /*width: calc(100vw - 60px);
-    height: calc((100vw - 60px) * (9.0/16));*/
-    width: 700px;
-    height: 500px;
+.artist{
+    font-size: 14pt;
+    color: #ffffff;
+    margin-top: 10px;
 }
+
+.time {
+    font-size: 12pt;
+    color: #d1d1d1;
+}
+
+.music-buttons{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.music-buttons div{
+    font-family: proxima-nova, sans-serif;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    margin-right: 20px;
+}
+
+.spotify{
+    background-color: #1ED760;
+}
+
+.apple-music{
+    background-color: #FB233C;
+}
+
 
 ::-webkit-scrollbar {
     width: 10px;

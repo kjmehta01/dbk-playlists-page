@@ -23,39 +23,43 @@ h1 {
 
     border-radius: 15px;
 
-    margin-top: 52px;
+    margin-top: 70px;
     margin-left: 280px;
     margin-right: 7px;
 
-    overflow-y: scroll;
+    overflow-y: auto;
     scroll-behavior: smooth;
 
-    height: calc(100vh - 52px - 7px);
+    height: calc(100vh - 70px - 7px);
 
     padding: 0;
 }
 
 
 .top-bar {
-    overflow: hidden;
     background-color: #000;
 
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 52px;
+    height: 70px;
 
     font-family: proxima-nova, sans-serif;
+    font-size: 14pt;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .top-bar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    overflow: hidden;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 21px 16px;
     transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 .top-bar a:hover {
@@ -63,8 +67,7 @@ h1 {
 }
 
 .centered {
-    width: 50%;
-    margin: 0 auto;
+    
 }
 
 
@@ -76,10 +79,10 @@ h1 {
 
     position: fixed;
 
-    top: 52px;
+    top: 70px;
     left: 7px;
 
-    height: calc(100vh - 52px - 20px - 7px);
+    height: calc(100vh - 70px - 20px - 7px);
     width: 265px;
 
     padding-top: 20px;
@@ -107,6 +110,7 @@ h1 {
 .sideways-gallery {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 

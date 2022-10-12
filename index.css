@@ -5,6 +5,7 @@ body {
 }
 
 section {
+    margin-left: 10px;
     padding: 20px;
 }
 
@@ -19,7 +20,7 @@ h1 {
 }
 
 .main {
-    background-image: linear-gradient(#c0392b, #121212 40%);
+    background-image: linear-gradient(#c0392b, #121212);
 
     border-radius: 15px;
 
@@ -64,6 +65,47 @@ h1 {
 
 .top-bar a:hover {
     background: #c0392b;
+}
+
+.circle {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    background-color: #242424;
+    border-radius: 22px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.circle:hover {
+    background-color: #363636;
+}
+
+.oval {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    background-color: #242424;
+    border-radius: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    color: #fff;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
 

@@ -19,7 +19,7 @@ h1 {
 }
 
 .main {
-    background-image: linear-gradient(#631e17, #121212 30%);
+    background-image: linear-gradient(#c0392b, #121212 40%);
 
     border-radius: 15px;
 
@@ -66,14 +66,10 @@ h1 {
     background: #c0392b;
 }
 
-.centered {
-    
-}
-
 
 .side-bar {
     overflow-y: auto;
-    background-image: linear-gradient(#631e17, #121212 30%);
+    background-image: linear-gradient(#c0392b, #121212 40%);
 
     border-radius: 15px;
 
@@ -95,7 +91,7 @@ h1 {
 .side-bar a {
     float: top;
     display: block;
-    color: #a7a7a7;
+    color: #bebebe;
     text-align: left;
     margin-bottom: 10px;
     margin-left: 30px;
@@ -103,7 +99,7 @@ h1 {
 }
 
 .side-bar a:hover {
-    color: #eeeeee;
+    color: #fff;
 }
 
 

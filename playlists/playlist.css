@@ -2,6 +2,7 @@ body {
     background-color: #000;
     margin: 0;
     overflow: hidden;
+    height: calc(100vh - 70px);
 }
 
 section {
@@ -30,8 +31,9 @@ h1 {
     overflow-y: scroll;
     scroll-behavior: smooth;
 
+    height: calc(50% - 30px);
 
-    padding: 10px;
+    padding: 15px;
 }
 
 .main2 {
@@ -42,7 +44,7 @@ h1 {
     margin-right: 7px;
     margin-bottom: 7px;
     
-    height: calc((100vh - 70px - 7px) / 2 - 65px);
+    height: calc(50% - 17px);
 
     padding: 0px;
 }
@@ -97,6 +99,11 @@ h1 {
 }
 
 .oval {
+    background-image: url("/assets/dbk.png");
+
+    height: 44px;
+    width: 44px;
+
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
@@ -106,9 +113,9 @@ h1 {
 
     background-color: #242424;
     border-radius: 22px;
-    padding: 10px 20px;
     cursor: pointer;
 }
+
 
 .material-symbols-outlined {
     color: #fff;
@@ -222,25 +229,40 @@ h1 {
     text-align: center;
 
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
 
     margin-right: 40px;
 }
 
 .spotify{
-    background-color: #16D760;
-    cursor: pointer;
+    background-color: #15bc55;
 }
 
 .spotify:hover {
-    background-color: #15bc55;
+    background-color: #139946;
 }
 
 .apple-music{
     background-color: #FB233C;
-    cursor: pointer;
+}
+
+.apple-music:hover {
+    background-color: #c41d31;
+}
+
+.spotify-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 65px;
+}
+
+.applemusic-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 45px;
 }
 
 

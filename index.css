@@ -86,6 +86,11 @@ h1 {
 }
 
 .oval {
+    background-image: url("/assets/dbk.png");
+
+    height: 44px;
+    width: 44px;
+
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
@@ -95,9 +100,9 @@ h1 {
 
     background-color: #242424;
     border-radius: 22px;
-    padding: 10px 20px;
     cursor: pointer;
 }
+
 
 .material-symbols-outlined {
     color: #fff;

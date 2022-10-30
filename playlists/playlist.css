@@ -29,6 +29,7 @@ h1 {
     margin-right: 15px;
 
     overflow-y: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 
     height: calc(100vh - 70px - 10px - 10px);
@@ -297,7 +298,7 @@ h1 {
 
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -305,7 +306,9 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #666;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #444444;
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -236,7 +236,7 @@ h1 {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -244,10 +244,11 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background: #444444;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgba(44,44,44,80);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgba(55,55,55,80);
 }

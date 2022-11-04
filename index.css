@@ -78,6 +78,33 @@ h1 {
     background: #c0392b;
 }
 
+.search-bar {
+    height: 30px;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-input {
+    height: 100%;
+    font-size: 18;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+}
+.search-input:focus:hover {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+}
+
 .circle {
     margin-left: 20px;
     margin-right: 20px;
@@ -186,6 +213,8 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+
+    flex-shrink: 1;
 }
 
 .gallery-item {
@@ -231,7 +260,7 @@ h1 {
 .video {
     /*width: calc(100vw - 60px);
     height: calc((100vw - 60px) * (9.0/16));*/
-    width: 1000px;
+    width: calc(100% - 20px);
     height: 700px;
 }
 

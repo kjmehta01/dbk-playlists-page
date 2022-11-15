@@ -1,8 +1,82 @@
 .main{
-    height: calc(100vh - 70px - 10px);
+    height: calc(100vh - 60px - 10px);
     padding: 0;
 }
 
+section {
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.header-image {
+    box-shadow: 0px 0px 10px black;
+
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.grid-gallery {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #30303070;
+    padding: 0px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    /* background-color: #333333; */
+    background-color: #c93625;
+}
+
+.grid-image {
+    width: 100px;
+    height: 100px;
+}
+
+.grid-text-box {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-text {
+    color: #ffffff;
+    margin: 0;
+
+    font-size: 14pt;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.grid-subtext {
+    color: #a7a7a7;
+    margin: 0;
+
+    font-size: 12pt;
+    font-family: proxima-nova, sans-serif;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .sideways-gallery {
     display: flex;
@@ -18,14 +92,13 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 0px;
+
     padding: 20px;
     transition-duration: 0.3s;
     cursor: pointer;
 }
 
 .gallery-item:hover {
-    /* background-color: #333333; */
     background-color: #c93625;
 }
 
@@ -43,6 +116,11 @@
     font-size: 14pt;
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
+
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .gallery-subtext {
@@ -51,6 +129,11 @@
 
     font-size: 12pt;
     font-family: proxima-nova, sans-serif;
+
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .video {

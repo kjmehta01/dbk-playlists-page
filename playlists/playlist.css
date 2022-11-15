@@ -1,12 +1,13 @@
 .main{
-    height: calc(100vh - 70px - 10px - 25px);
+    height: calc(100vh - 60px - 10px - 30px);
 
+    padding: 15px;
+}
+
+section {
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .playlist-header{
@@ -15,17 +16,14 @@
 }
 
 .playlist-image {
+    float: left;
     box-shadow: 0px 0px 10px black;
     width: 250px;
     height: 250px;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
-.playlist-text-area{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    margin-left: 30px
-}
 .playlist-text-area p{
     font-family: proxima-nova, sans-serif;
     margin-bottom: 0;
@@ -39,7 +37,7 @@
 
 .name{
     font-weight: bold;
-    font-size: 48pt;
+    font-size: 54pt;
     color: #ffffff;
     margin-top: 0px;
 }
@@ -64,56 +62,78 @@
 .music-buttons{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
-.music-buttons div{
+.music-buttons > a > div{
     font-family: proxima-nova, sans-serif;
+    font-size: 20px;
     color: #ffffff;
     border-radius: 25px;
-    width: 400px;
     height: 70px;
     text-align: center;
-    box-shadow: rgba(0,0,0,0.3) 0px 0px 10px;
+    
+    box-shadow: 0px 5px 10px #00000070;
 
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 
     cursor: pointer;
 
     margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     transition-duration: 0.2s;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.music-buttons > a > div:hover {
+    box-shadow: 0px 2px 10px #00000070;
+}
+
+.music-buttons > a > div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .spotify{
-    background-color: #15b251;
-
-    font-family: proxima-nova, sans-serif;
-    font-size: 20px;
+    background-image: linear-gradient(#15b251, #119845);
+    padding-right: 30px;
+    width: 320px;
 }
 
 .spotify:hover {
-    background-color: #139946;
+    background-image: linear-gradient(#119845, #119845);
 }
 
 .apple-music{
-    background-color: #e81f37;
+    background-image: linear-gradient(#e81f37, #ca1c30);
+    padding-right: 10px;
+    width: 340px;
 }
 
 .apple-music:hover {
-    background-color: #c41d31;
+    background-image: linear-gradient(#ca1c30, #ca1c30);
 }
 
 .spotify-icon{
     width: 40px;
     height: 40px;
-    margin-left: 65px;
 }
 
 .applemusic-icon{
     width: 40px;
     height: 40px;
-    margin-left: 45px;
+}
+
+.embed{
+    margin-top: 20px;
+    border-radius: 15px;
 }

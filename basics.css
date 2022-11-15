@@ -4,11 +4,6 @@ body {
     overflow: hidden;
 }
 
-section {
-    margin-left: 20px;
-    padding: 10px;
-}
-
 h1 {
     color: #ffffff;
     margin-top: 0;
@@ -26,8 +21,8 @@ h1 {
 
     border-radius: 15px;
 
-    margin-top: 70px;
-    margin-left: 215px;
+    margin-top: 60px;
+    margin-left: 75px;
     margin-right: 15px;
 
     overflow-y: auto;
@@ -53,7 +48,7 @@ h1 {
 .menu {
     position: fixed;
     left: 15px;
-    top: 15px;
+    top: 10px;
 
     height: 44px;
     width: 44px;
@@ -80,7 +75,7 @@ h1 {
     top: 0px;
     left: 0px;
 
-    height: 70px;
+    height: 60px;
     width: 100vw;
 
     display: flex;
@@ -125,8 +120,8 @@ h1 {
     background-size: contain;
 
     position: fixed;
-    right: 20px;
-    top: 15px;
+    right: 15px;
+    top: 10px;
 
     height: 44px;
     width: 44px;
@@ -180,11 +175,11 @@ h1 {
 
     position: fixed;
 
-    top: 70px;
+    top: 60px;
     left: 7px;
 
-    height: calc(100vh - 70px - 10px);
-    width: 200px;
+    height: calc(100vh - 60px - 10px);
+    width: 60px;
 
     font-family: proxima-nova, sans-serif;
     font-size: 12pt;
@@ -193,13 +188,16 @@ h1 {
 
 .side-bar-button {
     transition: padding-left .3s;
-    transition: text-align .3s;
+    transition: justify-content .3s;
 
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
     color: #a3a3a3;
-    text-align: left;
 
-    padding-left: 30px;
+    padding-left: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 0px;
@@ -213,6 +211,15 @@ h1 {
     color: #ffffff !important;
 }
 
+#first-sbbtn {
+    color: #ffffff;
+}
+
+.side-bar-icon {
+    color: #a3a3a3;
+}
+
+
 .side-bar hr {
     height: 1px;
     width: 90%;
@@ -221,6 +228,11 @@ h1 {
     background-color: #ffffff50;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.empty {
+    width: 100%;
+    height: 40px;
 }
 
 

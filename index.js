@@ -1,29 +1,81 @@
-const headers = ["Good evening", "Video", "Good Evening"];
+const headers = ["Good evening", "Video", "Good Evening", "Genres", "Decades", "Popularity", "Venues", "Venue Map", "About"];
 
 function openCloseNav() {
-    if (document.getElementsByClassName("side-bar")[0].style.width === "60px") {
-        document.getElementsByClassName("side-bar")[0].style.width = "200px";
-        document.getElementsByClassName("main")[0].style.marginLeft = "215px";
+    if (document.getElementsByClassName("side-bar")[0].style['width'] === "200px") {
+        document.getElementsByClassName("side-bar")[0].style['width'] = "60px";
+        document.getElementsByClassName("main")[0].style['marginLeft'] = "75px";
 
-        sbbtns = document.getElementsByClassName("side-bar-button");
+        sbbtns = document.getElementsByClassName("side-bar-text");
+        sbancs = document.getElementsByClassName("side-bar-button");
         for (let i = 0; i < sbbtns.length; i++) {
-            sbbtns[i].style['padding-left'] = "30px"
-            sbbtns[i].style['text-align'] = "left"
-            sbbtns[i].textContent = headers[i]
+            sbancs[i].style['padding-left'] = "0px"
+            sbbtns[i].style['padding-left'] = "0px"
+
+            sbancs[i].style['justify-content'] = "center"
+            sbbtns[i].textContent = ""
         }
+
+        localStorage.setItem("sbstate", "close")
     }
     else {
-        document.getElementsByClassName("side-bar")[0].style.width = "60px";
-        document.getElementsByClassName("main")[0].style.marginLeft = "75px";
+        document.getElementsByClassName("side-bar")[0].style['width'] = "200px";
+        document.getElementsByClassName("main")[0].style['marginLeft'] = "215px";
 
-        sbbtns = document.getElementsByClassName("side-bar-button");
+        sbbtns = document.getElementsByClassName("side-bar-text");
+        sbancs = document.getElementsByClassName("side-bar-button");
         for (let i = 0; i < sbbtns.length; i++) {
-            sbbtns[i].style['padding-left'] = "0px"
-            sbbtns[i].style['text-align'] = "center"
-            sbbtns[i].textContent = "O"
+            sbancs[i].style['padding-left'] = "20px"
+            sbbtns[i].style['padding-left'] = "10px"
+
+            sbancs[i].style['justify-content'] = "flex-start"
+            sbbtns[i].textContent = headers[i]
         }
+
+        localStorage.setItem("sbstate", "open")
     }
 }
+
+function readState() {
+    if (localStorage.getItem('sbstate') === null) {
+
+    }
+    else if(localStorage.getItem('sbstate')  === 'close'){
+        document.getElementsByClassName("side-bar")[0].style['width'] = "60px";
+        document.getElementsByClassName("main")[0].style['marginLeft'] = "75px";
+
+        sbbtns = document.getElementsByClassName("side-bar-text");
+        sbancs = document.getElementsByClassName("side-bar-button");
+        for (let i = 0; i < sbbtns.length; i++) {
+            sbancs[i].style['padding-left'] = "0px"
+            sbbtns[i].style['padding-left'] = "0px"
+
+            sbancs[i].style['justify-content'] = "center"
+            sbbtns[i].textContent = ""
+        }
+
+        localStorage.setItem("sbstate", "close")
+    }
+    else {
+        document.getElementsByClassName("side-bar")[0].style['width'] = "200px";
+        document.getElementsByClassName("main")[0].style['marginLeft'] = "215px";
+
+        sbbtns = document.getElementsByClassName("side-bar-text");
+        sbancs = document.getElementsByClassName("side-bar-button");
+        for (let i = 0; i < sbbtns.length; i++) {
+            sbancs[i].style['padding-left'] = "20px"
+            sbbtns[i].style['padding-left'] = "10px"
+
+            sbancs[i].style['justify-content'] = "flex-start"
+            sbbtns[i].textContent = headers[i]
+        }
+
+        localStorage.setItem("sbstate", "open")
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    readState();
+});
 
 
 var waiting = false;
@@ -36,14 +88,10 @@ function navHighlighter(){
 
 
 function navHighlighterHelper() {
-    console.log('aa')
-    
-
     const sections = document.querySelectorAll("section");
-    const navMenu = document.getElementsByClassName("side-bar-button");
+    const navMenu = document.getElementsByClassName("side-bar-text");
+    const navMenu2 = document.getElementsByClassName("side-bar-icon");
     const main = document.getElementsByClassName("main")[0];
-
-    console.log(main.scrollTop)
 
     let first = true;
 
@@ -51,17 +99,19 @@ function navHighlighterHelper() {
         curr = sections[i]
         const distToTop = main.scrollTop - curr.offsetTop
 
-        console.log(i + ': ' + distToTop)
-
-        if (distToTop >= -70 && first) {
+        if(main.scrollHeight - main.scrollTop - main.clientHeight < 1 && first){
             navMenu[i].style.color = "#ffffff";
+            navMenu2[i].style.color = "#ffffff";
+            first = false;
+        } else if (distToTop >= -70 && first) {
+            navMenu[i].style.color = "#ffffff";
+            navMenu2[i].style.color = "#ffffff";
             first = false;
         } else {
             navMenu[i].style.color = "#a3a3a3";
+            navMenu2[i].style.color = "#a3a3a3";
         }
     }
 
     waiting = false;
 }
-
-setTimeout(navHighlighter, 100);

@@ -156,7 +156,7 @@ h1 {
     margin-left:7px;
     color: #ffffff;
 
-    font-size: 14pt;
+    font-size: max(2vh,14pt);
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
 }

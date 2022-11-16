@@ -31,6 +31,8 @@ section {
     flex-direction: row;
     align-items: center;
 
+    min-width: 0;
+
     background-color: #30303070;
     padding: 0px;
     transition-duration: 0.3s;
@@ -49,6 +51,7 @@ section {
 
 .grid-text-box {
     margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
 }

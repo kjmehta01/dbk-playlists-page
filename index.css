@@ -21,7 +21,7 @@ section {
 
 .grid-gallery {
     display:grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     row-gap: 20px;
     column-gap: 20px;
 }

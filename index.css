@@ -82,7 +82,7 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 
     flex-shrink: 1;
 }
@@ -104,8 +104,8 @@ section {
 
 .gallery-image {
     box-shadow: 0px 0px 10px black;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
 }
 
 .gallery-text {
@@ -117,7 +117,7 @@ section {
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
 
-    max-width: 150px;
+    max-width: 175px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -130,7 +130,7 @@ section {
     font-size: 12pt;
     font-family: proxima-nova, sans-serif;
 
-    max-width: 150px;
+    max-width: 175px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

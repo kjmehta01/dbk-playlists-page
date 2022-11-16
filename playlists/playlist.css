@@ -1,5 +1,5 @@
 .main{
-    height: calc(100vh - 60px - 10px - 30px);
+    height: calc(100vh - 7vh - 10px - 30px);
 
     padding: 15px;
 }

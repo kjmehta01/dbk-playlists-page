@@ -103,7 +103,7 @@ function navHighlighterHelper() {
             navMenu[i+3].style.color = "#ffffff";
             navMenu2[i+3].style.color = "#ffffff";
             first = false;
-        } else if (distToTop >= -70 && first) {
+        } else if (distToTop >= -90 && first) {
             navMenu[i+3].style.color = "#ffffff";
             navMenu2[i+3].style.color = "#ffffff";
             first = false;

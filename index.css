@@ -1,5 +1,5 @@
 .main{
-    height: calc(100vh - 60px - 10px);
+    height: calc(100vh - 7vh - 10px);
     padding: 0;
 }
 
@@ -142,4 +142,5 @@ section {
     height: calc((100vw - 60px) * (9.0/16));*/
     width: calc(100% - 20px);
     height: 700px;
+    margin-bottom: 20px;
 }

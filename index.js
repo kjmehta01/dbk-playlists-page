@@ -39,7 +39,7 @@ function readState() {
     if (localStorage.getItem('sbstate') === null) {
 
     }
-    else if(localStorage.getItem('sbstate')  === 'close'){
+    else if (localStorage.getItem('sbstate') === 'close') {
         document.getElementsByClassName("side-bar")[0].style['width'] = "60px";
         document.getElementsByClassName("main")[0].style['marginLeft'] = "75px";
 
@@ -73,14 +73,14 @@ function readState() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function (event) {
     readState();
 });
 
 
 var waiting = false;
-function navHighlighter(){
-    if(!waiting){
+function navHighlighter() {
+    if (!waiting) {
         waiting = true;
         setTimeout(navHighlighterHelper, 100)
     }
@@ -99,11 +99,15 @@ function navHighlighterHelper() {
         curr = sections[i]
         const distToTop = main.scrollTop - curr.offsetTop
 
-        if(main.scrollHeight - main.scrollTop - main.clientHeight < 1 && first){
+        if (main.scrollHeight - main.scrollTop - main.clientHeight < 1 && first) {
             navMenu[i].style.color = "#ffffff";
             navMenu2[i].style.color = "#ffffff";
             first = false;
         } else if (distToTop >= -70 && first) {
+            navMenu[i].style.color = "#ffffff";
+            navMenu2[i].style.color = "#ffffff";
+            first = false;
+        } else if (i == 0 && first) {
             navMenu[i].style.color = "#ffffff";
             navMenu2[i].style.color = "#ffffff";
             first = false;

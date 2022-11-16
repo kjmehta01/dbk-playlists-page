@@ -21,7 +21,7 @@ section {
 
 .grid-gallery {
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(min(500px,100%), 1fr));
     row-gap: 20px;
     column-gap: 20px;
 }
@@ -82,19 +82,17 @@ section {
 }
 
 .sideways-gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-
-    flex-shrink: 1;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(215px,100%), 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
 }
 
 .gallery-item {
     background-color: #18181870;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
 
     padding: 20px;
     transition-duration: 0.3s;

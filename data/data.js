@@ -1,4 +1,4 @@
-const headers = ["Upbeat", "Unwind", "Feeling Lucky", "Video", "Genres", "Decades", "Popularity", "Venues", "Venue Map", "About"];
+const headers = ["Upbeat", "Unwind", "Feeling Lucky", "Video", "About", "Genres", "Decades", "Popularity", "Venues", "Venue Map"];
 
 function openCloseNav() {
     if (document.getElementsByClassName("side-bar")[0].style['width'] === "200px") {
@@ -100,16 +100,16 @@ function navHighlighterHelper() {
         const distToTop = main.scrollTop - curr.offsetTop
 
         if(main.scrollHeight - main.scrollTop - main.clientHeight < 1 && first){
-            navMenu[i+4].style.color = "#ffffff";
-            navMenu2[i+4].style.color = "#ffffff";
+            navMenu[i+5].style.color = "#ffffff";
+            navMenu2[i+5].style.color = "#ffffff";
             first = false;
         } else if (distToTop >= -70 && first) {
-            navMenu[i+4].style.color = "#ffffff";
-            navMenu2[i+4].style.color = "#ffffff";
+            navMenu[i+5].style.color = "#ffffff";
+            navMenu2[i+5].style.color = "#ffffff";
             first = false;
         } else {
-            navMenu[i+4].style.color = "#a3a3a3";
-            navMenu2[i+4].style.color = "#a3a3a3";
+            navMenu[i+5].style.color = "#a3a3a3";
+            navMenu2[i+5].style.color = "#a3a3a3";
         }
     }
 

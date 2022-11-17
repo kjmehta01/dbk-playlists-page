@@ -64,7 +64,6 @@ section {
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
 
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -94,9 +93,10 @@ section {
     flex-direction: column;
     align-items: center;
 
-    padding: 20px;
     transition-duration: 0.3s;
     cursor: pointer;
+
+    height:100%;
 }
 
 .gallery-item:hover {
@@ -104,6 +104,7 @@ section {
 }
 
 .gallery-image {
+    margin-top: 20px;
     box-shadow: 0px 0px 10px black;
     width: 175px;
     height: 175px;
@@ -119,7 +120,7 @@ section {
     font-weight: bold;
 
     max-width: 175px;
-    white-space: nowrap;
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -135,6 +136,8 @@ section {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    margin-bottom: 20px;
 }
 
 .video {
@@ -143,4 +146,44 @@ section {
     width: calc(100% - 20px);
     height: 700px;
     margin-bottom: 20px;
+}
+
+#about > p {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 14pt;
+    font-family: proxima-nova, sans-serif;
+    color: rgb(202, 202, 202);
+    text-align: justify;
+}
+
+.credits-sideways {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.credits-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 500px;
+}
+
+.credits-title {
+    font-size: 16pt;
+    font-family: proxima-nova, sans-serif;
+    color: #ffffff;
+}
+
+.credits-people {
+    font-size: 12pt;
+    font-family: proxima-nova, sans-serif;
+    color: rgb(202, 202, 202);
+
+    text-align: center;
 }

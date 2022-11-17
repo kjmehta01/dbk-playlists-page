@@ -28,6 +28,13 @@ section {
     margin-bottom: 20px;
 }
 
+.playlist-text-area{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 30px
+}
+
 .playlist-text-area p{
     font-family: proxima-nova, sans-serif;
     margin-bottom: 0;

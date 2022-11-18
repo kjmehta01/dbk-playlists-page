@@ -1,4 +1,4 @@
-const headers = ["Upbeat", "Unwind", "Feeling Lucky", "Video", "About", "Genres", "Decades", "Popularity", "Venues", "Venue Map"];
+const headers = ["Upbeat", "Unwind", "Feeling Lucky", "Video", "About", "Genres", "Decades", "Artists", "Venues", "Venue Map"];
 
 function openCloseNav() {
     if (document.getElementsByClassName("side-bar")[0].style['width'] === "200px") {

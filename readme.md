@@ -1,3 +1,3 @@
-# Spotify-Themed DBK Page
+# The Playlist Project
 
-Fun little static web page for The Diamondback to share some spotify playlists.
+Fun little web page for The Diamondback to share some playlists and data.

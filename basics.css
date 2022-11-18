@@ -186,7 +186,7 @@ h1 {
     width: 60px;
 
     font-family: proxima-nova, sans-serif;
-    font-size: min(max(2vh,20px), 36px);
+    font-size: min(max(2vh,20px), 30px);
     font-weight: 600;
 }
 
@@ -231,7 +231,7 @@ h1 {
 
 .side-bar-icon {
     color: #a3a3a3;
-    font-size: min(max(2vh,20px), 36px) !important;
+    font-size: min(max(2vh,20px), 30px) !important;
 }
 
 

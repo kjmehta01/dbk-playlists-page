@@ -9,7 +9,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 10px;
 
-    font-size: 24pt;
+    font-size: min(max(24pt, 2vh),35px);
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
 }

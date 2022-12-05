@@ -60,7 +60,7 @@ section {
     color: #ffffff;
     margin: 0;
 
-    font-size: 14pt;
+    font-size: min(max(1vh,14pt), 24px);
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
 
@@ -72,7 +72,7 @@ section {
     color: #a7a7a7;
     margin: 0;
 
-    font-size: 12pt;
+    font-size: min(max(0.8vh,12pt), 20px);
     font-family: proxima-nova, sans-serif;
 
     white-space: nowrap;
@@ -115,7 +115,7 @@ section {
     margin-top: 10px;
     margin-bottom: 0;
 
-    font-size: 14pt;
+    font-size: min(max(1vh,14pt), 24px);
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
 
@@ -129,7 +129,7 @@ section {
     color: #a7a7a7;
     margin: 0;
 
-    font-size: 12pt;
+    font-size: min(max(0.8vh,12pt), 20px);
     font-family: proxima-nova, sans-serif;
 
     max-width: 175px;
@@ -151,7 +151,7 @@ section {
 #about > p {
     margin-left: 40px;
     margin-right: 40px;
-    font-size: 14pt;
+    font-size: min(max(1vh,14pt), 24px);
     font-family: proxima-nova, sans-serif;
     color: rgb(202, 202, 202);
     text-align: justify;
@@ -175,13 +175,13 @@ section {
 }
 
 .credits-title {
-    font-size: 16pt;
+    font-size: min(max(1.2vh,16pt), 28px);
     font-family: proxima-nova, sans-serif;
     color: #ffffff;
 }
 
 .credits-people {
-    font-size: 12pt;
+    font-size: min(max(0.8vh,12pt), 20px);
     font-family: proxima-nova, sans-serif;
     color: rgb(202, 202, 202);
 
